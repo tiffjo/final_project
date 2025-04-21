@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="dist/css/lightbox2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Recipes Gallery</title>
+</head>
+<body>
+    <div class="skip" tabindex="0"><a href="#main-section">Skip to Main Content</a></div>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="images/JO Logo copy.png" alt="'JO' name logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-section">
+        <div class="grid" tabindex="0">
+            <div>
+                <img src="images/lightbox1.png" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox2.jpg" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox3.jpg" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox4.jpg" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox5.jpg" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox6.JPG" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox7.png" alt="Click to view IG vers">
+            </div>
+            <div>
+                <img src="images/lightbox8.jpg" alt="full plate brekkie plate">
+            </div>
+            <div><img src="images/lightbox9.png" alt="yogurt bark"></div>
+        </div>
+    </main>
+    <footer tabindex="0">
+        <img src="images/JO Logo copy.png" alt="'JO' name logo">
+
+        <div class="socials">
+            <a href="https://www.instagram.com/loveyourbowls?igsh=bTNiN3FtZXphY3Nk&utm_source=qr" target="_blank"><img src="images/instagram.png" alt=""></a>
+        </div>
+        <div>
+            <p>© Copyrights <span id="year"></span> by Tiffany Jo. All rights reserved.</p>
+        </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+<script async src="//www.instagram.com/embed.js"></script>
+</html>

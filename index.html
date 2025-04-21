@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <title>Tiffany's Breakfast Curations</title>
+</head>
+<body>
+     <!-- Full-screen intro screen -->
+     <div class="intro-screen" id="intro-screen">
+        <div id="name-form" tabindex="0">
+            <h2 tabindex="0">Type your name to enter! </h2>
+            <input type="text" id="name-input" placeholder="Your name">
+            <button onclick="showWelcome()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Skip link -->
+    <div class="skip" tabindex="0"><a href="#main-section">Skip to Main Content</a></div>
+    <!-- Welcome message -->
+    <div id="welcome-message">
+        <h1 id="greeting"></h1>
+    </div>
+     <!-- my normal content -->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="images/JO Logo copy.png" alt="'JO' name logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-section" style="display: none;">
+        <div class="intro" tabindex="0">
+            <div>
+                <p> Hi, I'm Tiffany! I like making yogurt bowls and other breakfast recipes, and I'm excited to share you my curations through a UX lens! Enjoy! ♡ </p>
+            </div>
+            <div class="intro-images">
+                <div>
+                    <img src="images/bowl1.png" alt="Chia pudding bowl">
+                    <p>chia</p>
+                </div>
+                <div>
+                    <img src="images/bowl2.png" alt="Yogurt parfait bowl">
+                    <p>yogurt</p>
+                </div>
+                <div>
+                    <img src="images/bowl3.png" alt="Green smoothie bowl">
+                    <p>smoothie</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="recipes-section" tabindex="0">
+            <div class="section-grid">
+                <h2>~ how to: brekkie plate ~</h2>
+                <div class="section-card">
+                    <h3>🪄 tools:</h3>
+                    <ul>
+                        <p><li>cute plate</li></p>
+                        <p><li>greek yogurt</li></p>
+                        <p><li>fruit of choice</li></p>
+                        <p><li>granola</li></p>
+                        <p><li>honey/nut butter/cinnamon</li></p>
+                        <p><li>sourdough</li></p>
+                        <p><li>spread of choice</li></p>
+                    </ul>
+                    <p class="text">Prep all the "UX tools" to make the best brekkie plate you've ever had.</p>
+                </div>
+                <div class="image">
+                    <img src="images/card1.png" alt="Wooden plate with a sourdough toast, a pretzel, and a yogurt bowl with fruit toppings" style="width:90%">
+                </div>
+
+            </div>
+
+            <div class="section-grid right">
+                <h2>~ the process ~</h2>
+                <div class="image">
+                    <img src="images/card2.png" alt="Smoothie bowl with fruit and granola toppings" style="width:70%">
+                </div>
+                <div class="section-card">
+                    <h3>🫐 design:</h3>
+                    <p>Now the fun part! Let your creativity shine and remember: design is an iterative process - so don't be afraid if it's messy!</p>
+                </div>            
+            </div>
+
+            <div class="section-grid">
+                <h2>~ the outcome ~</h2>
+                <div class="section-card">
+                    <h3>✨ phone eats first</h3>
+                    <div>
+                        <p class="text">Time to show the IMPACT. If you don't take a photo, it didn't happen. DUH</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/card3.png" alt="Color fruit yogurt bowl on a decorative tray with a wooden spoon" style="width:90%">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer tabindex="0">
+        <img src="images/JO Logo copy.png" alt="'JO' name logo">
+
+        <div class="socials">
+            <a href="https://www.instagram.com/loveyourbowls?igsh=bTNiN3FtZXphY3Nk&utm_source=qr"><img src="images/instagram.png" alt=""></a>
+        </div>
+        <div>
+            <p>© Copyrights <span id="year"></span> by Tiffany Jo. All rights reserved.</p>
+        </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
