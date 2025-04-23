@@ -46,6 +46,8 @@ function showWelcome() {
 // Create the lightbox overlay
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
+lightbox.setAttribute('role', 'dialog'); // Adds it to the accessibility tree
+lightbox.setAttribute('aria-label', 'Image preview'); // Optional label
 document.body.appendChild(lightbox);
 
 // Add click listeners to all images in the grid
@@ -55,6 +57,7 @@ images.forEach(image => {
         lightbox.classList.add('active');
         const img = document.createElement('img');
         img.src = image.src;
+        img.alt = image.alt || "Image preview"; // Preserve alt text for accessibility
         while (lightbox.firstChild) {
             lightbox.removeChild(lightbox.firstChild);
         }
