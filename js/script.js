@@ -3,24 +3,6 @@ function downloadFile(){
 }
 
 
-//if want to change image on clicking on image (i want to change black and white image to a different image w color)
-
-// let imgElement = document.getElementById("myImage");
-
-// let isImageOne = true; // State variable
-
-// imgElement.onclick = function() {
-//     if (isImageOne) {
-//     imgElement.src = "image2.jpg";
-//     } else {
-//     imgElement.src = "image1.jpg";
-//     }
-//     isImageOne = !isImageOne; // Toggle state
-// };
-
-
-//delete unused code above this line ^^ 
-
 function showWelcome() {
     const name = document.getElementById('name-input').value;
     if (name.trim() !== "") {
