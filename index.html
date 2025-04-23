@@ -13,20 +13,21 @@
 </head>
 <body>
      <!-- Full-screen intro screen -->
-     <div class="intro-screen" id="intro-screen">
-        <div id="name-form" tabindex="0">
+     <section class="intro-screen" id="intro-screen" aria-label="Intro Form">
+        <section id="name-form" tabindex="0">
             <h2 tabindex="0">Type your name to enter! </h2>
+            <label for="name-input" class="name-input"> Name:</label>
             <input type="text" id="name-input" placeholder="Your name">
             <button onclick="showWelcome()">Submit</button>
-        </div>
-    </div>
+        </section>
+    </section>
 
     <!-- Skip link -->
     <div class="skip" tabindex="0"><a href="#main-section">Skip to Main Content</a></div>
     <!-- Welcome message -->
-    <div id="welcome-message">
-        <h1 id="greeting"></h1>
-    </div>
+    <section id="welcome-message" aria-label="Welcome Message">
+        <h1 id="greeting" aria-label="name-form"></h1>
+    </section>
      <!-- my normal content -->
     <header>
         <nav>
@@ -41,7 +42,7 @@
         </nav>
     </header>
 
-    <main id="main-section" style="display: none;">
+    <main id="main-section" style="display: none;" role="main">
         <div class="intro" tabindex="0">
             <div>
                 <p> Hi, I'm Tiffany! I like making yogurt bowls and other breakfast recipes, and I'm excited to share you my curations through a UX lens! Enjoy! ♡ </p>
@@ -69,13 +70,20 @@
                 <div class="section-card">
                     <h3>🪄 tools:</h3>
                     <ul>
-                        <p><li>cute plate</li></p>
+                        <!-- <p><li>cute plate</li></p>
                         <p><li>greek yogurt</li></p>
                         <p><li>fruit of choice</li></p>
                         <p><li>granola</li></p>
                         <p><li>honey/nut butter/cinnamon</li></p>
                         <p><li>sourdough</li></p>
-                        <p><li>spread of choice</li></p>
+                        <p><li>spread of choice</li></p> -->
+                        <li>cute plate</li>
+                        <li>greek yogurt</li>
+                        <li>fruit of choice</li>
+                        <li>granola</li>
+                        <li>honey/nut butter/cinnamon</li>
+                        <li>sourdough</li>
+                        <li>spread of choice</li>
                     </ul>
                     <p class="text">Prep all the "UX tools" to make the best brekkie plate you've ever had.</p>
                 </div>
@@ -93,7 +101,7 @@
                 <div class="section-card">
                     <h3>🫐 design:</h3>
                     <p>Now the fun part! Let your creativity shine and remember: design is an iterative process - so don't be afraid if it's messy!</p>
-                </div>            
+                </div>
             </div>
 
             <div class="section-grid">
@@ -112,9 +120,10 @@
     </main>
     <footer tabindex="0">
         <img src="images/JO Logo copy.png" alt="'JO' name logo">
-
         <div class="socials">
-            <a href="https://www.instagram.com/loveyourbowls?igsh=bTNiN3FtZXphY3Nk&utm_source=qr"><img src="images/instagram.png" alt=""></a>
+            <a href="https://www.instagram.com/loveyourbowls?igsh=bTNiN3FtZXphY3Nk&utm_source=qr" target="_blank" aria-label="Follow me on Instagram">
+                <img src="images/instagram.png" alt="Instagram logo">
+            </a>
         </div>
         <div>
             <p>© Copyrights <span id="year"></span> by Tiffany Jo. All rights reserved.</p>
@@ -123,6 +132,7 @@
             document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="https://www.instagram.com/embed.js" async defer></script>
 </body>
-<script src="js/script.js"></script>
 </html>
